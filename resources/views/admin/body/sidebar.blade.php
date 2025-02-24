@@ -363,24 +363,24 @@
                      <hr>
                  {{-- @endif --}}
 
-                @if (Auth::user()->can('admin.menu'))
+                {{-- @if (Auth::user()->can('admin.menu')) --}}
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="ri-layout-3-line"></i>
                             <span>Admin Manage</span>
                         </a>
                         <ul>
-                            @if (Auth::user()->can('admin.list'))
+                            {{-- @if (Auth::user()->can('admin.list')) --}}
                                 <li>
                                     <a href="{{ route('all.admin') }}">
                                         <i class="ri-arrow-right-line"></i>All Admin
                                     </a>
                                 </li>
-                            @endif
+                            {{-- @endif --}}
                         </ul>
                     </li>
                     <hr>
-                @endif
+                {{-- @endif --}}
 
                  <li>
                      <a href="javascript: void(0);" class="has-arrow waves-effect">
