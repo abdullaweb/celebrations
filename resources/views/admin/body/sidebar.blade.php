@@ -19,7 +19,7 @@
                  </li>
                  <hr>
 
-                 @if (Auth::user()->can('customer.menu'))
+                 {{-- @if (Auth::user()->can('customer.menu')) --}}
                      <li>
                          <a href="javascript: void(0);" class="has-arrow waves-effect">
                              <i class="ri-user-3-line"></i>
@@ -45,7 +45,7 @@
                          </ul>
                      </li>
                      <hr>
-                 @endif
+                 {{-- @endif --}}
 
                  @if (Auth::user()->can('product.menu'))
                      <li>
