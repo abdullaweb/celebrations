@@ -19,7 +19,7 @@
                  </li>
                  <hr>
 
-                 {{-- @if (Auth::user()->can('customer.menu')) --}}
+                 @if (Auth::user()->can('customer.menu'))
                      <li>
                          <a href="javascript: void(0);" class="has-arrow waves-effect">
                              <i class="ri-user-3-line"></i>
@@ -34,18 +34,10 @@
                                      </a>
                                  </li>
                              @endif
-
-                             {{-- @if (Auth::user()->can('local.list'))
-                                 <li>
-                                     <a href="{{ route('all.customer') }}" class="waves-effect">
-                                         <i class="ri-user-3-line"></i> <span>Local</span>
-                                     </a>
-                                 </li>
-                             @endif --}}
                          </ul>
                      </li>
                      <hr>
-                 {{-- @endif --}}
+                 @endif
 
                  @if (Auth::user()->can('product.menu'))
                      <li>
@@ -331,56 +323,56 @@
                      <hr>
                  @endif
 
-                 {{-- @if (Auth::user()->can('role.permission.menu')) --}}
+                 @if (Auth::user()->can('role.permission.menu'))
                      <li>
                          <a href="javascript: void(0);" class="has-arrow waves-effect">
                              <i class="ri-lock-line"></i>
                              <span>Role & Permission</span>
                          </a>
                          <ul class="sub-menu" aria-expanded="true">
-                             {{-- @if (Auth::user()->can('all.permission')) --}}
+                             @if (Auth::user()->can('all.permission'))
                                  <li>
                                      <a href="{{ route('all.permission') }}" class="waves-effect">
                                          <i class="ri-arrow-right-line"></i>
                                          <span>All Permission</span>
                                      </a>
                                  </li>
-                             {{-- @endif --}}
-                             {{-- @if (Auth::user()->can('all.role')) --}}
+                             @endif
+                             @if (Auth::user()->can('all.role'))
                                  <li>
                                      <a href="{{ route('all.role') }}">
                                          <i class="ri-arrow-right-line"></i>All Role</a>
                                  </li>
-                             {{-- @endif --}}
-                             {{-- @if (Auth::user()->can('role.permission.list')) --}}
+                             @endif
+                             @if (Auth::user()->can('role.permission.list'))
                                  <li>
                                      <a href="{{ route('all.role.permission') }}">
                                          <i class="ri-arrow-right-line"></i>All Role Permission</a>
                                  </li>
-                             {{-- @endif --}}
+                             @endif
                          </ul>
                      </li>
                      <hr>
                  {{-- @endif --}}
 
-                {{-- @if (Auth::user()->can('admin.menu')) --}}
+                @if (Auth::user()->can('admin.menu'))
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="ri-layout-3-line"></i>
                             <span>Admin Manage</span>
                         </a>
                         <ul>
-                            {{-- @if (Auth::user()->can('admin.list')) --}}
+                            @if (Auth::user()->can('admin.list'))
                                 <li>
                                     <a href="{{ route('all.admin') }}">
                                         <i class="ri-arrow-right-line"></i>All Admin
                                     </a>
                                 </li>
-                            {{-- @endif --}}
+                            @endif
                         </ul>
                     </li>
                     <hr>
-                {{-- @endif --}}
+                @endif
 
                  <li>
                      <a href="javascript: void(0);" class="has-arrow waves-effect">
