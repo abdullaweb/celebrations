@@ -331,37 +331,37 @@
                      <hr>
                  @endif
 
-                 @if (Auth::user()->can('role.permission.menu'))
+                 {{-- @if (Auth::user()->can('role.permission.menu')) --}}
                      <li>
                          <a href="javascript: void(0);" class="has-arrow waves-effect">
                              <i class="ri-lock-line"></i>
                              <span>Role & Permission</span>
                          </a>
                          <ul class="sub-menu" aria-expanded="true">
-                             @if (Auth::user()->can('all.permission'))
+                             {{-- @if (Auth::user()->can('all.permission')) --}}
                                  <li>
                                      <a href="{{ route('all.permission') }}" class="waves-effect">
                                          <i class="ri-arrow-right-line"></i>
                                          <span>All Permission</span>
                                      </a>
                                  </li>
-                             @endif
-                             @if (Auth::user()->can('all.role'))
+                             {{-- @endif --}}
+                             {{-- @if (Auth::user()->can('all.role')) --}}
                                  <li>
                                      <a href="{{ route('all.role') }}">
                                          <i class="ri-arrow-right-line"></i>All Role</a>
                                  </li>
-                             @endif
-                             @if (Auth::user()->can('role.permission.list'))
+                             {{-- @endif --}}
+                             {{-- @if (Auth::user()->can('role.permission.list')) --}}
                                  <li>
                                      <a href="{{ route('all.role.permission') }}">
                                          <i class="ri-arrow-right-line"></i>All Role Permission</a>
                                  </li>
-                             @endif
+                             {{-- @endif --}}
                          </ul>
                      </li>
                      <hr>
-                 @endif
+                 {{-- @endif --}}
 
                 @if (Auth::user()->can('admin.menu'))
                     <li>
