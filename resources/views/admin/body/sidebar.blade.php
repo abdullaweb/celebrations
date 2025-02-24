@@ -353,7 +353,7 @@
                          </ul>
                      </li>
                      <hr>
-                 {{-- @endif --}}
+                 @endif
 
                 @if (Auth::user()->can('admin.menu'))
                     <li>
